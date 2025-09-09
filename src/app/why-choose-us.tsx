@@ -41,26 +41,29 @@ export function WhyChooseUs() {
   return (
     <section className="w-full max-w-4xl mx-auto flex flex-col items-center px-4 py-10">
       <Typography variant="h2" className="text-center mb-2" color="blue-gray">
-        Why choose our course?
+        Kenapa Memilih Jasa Kami?
       </Typography>
       <Typography
         variant="lead"
         className="mb-16 w-full text-center font-normal !text-gray-500 lg:w-10/12"
       >
-        Discover the unique advantages, benefits, and standout features that set
-        our course apart from the rest.
+        Ahlinya Casing Laptop Retak & Engsel Patah — Rapi, Kuat, Seperti Baru Lagi.
+Kami fokus pada perbaikan casing retak/pecah, penguatan dudukan engsel, dan cat ulang (repaint) agar laptop Anda kembali kokoh dan enak dipandang.
       </Typography>
       <div className="mt-8">
         <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-12 mb-24">
-          <BackgroundCard title="Expert Instructors">
+          <BackgroundCard title="Nilai Utama">
             Learn from industry professionals with years of hands-on experience
             in React development.
           </BackgroundCard>
           <div className="space-y-8">
             <div className="my-4">
-              <Option icon={CloudIcon} title="React Fundamentals">
-                Start with the basics. Understand React&apos;s core concepts,
-                component structure, and the virtual DOM.
+              <Option icon={CloudIcon} title="Nilai Utama ">
+                Kuat & Presisi — Penguatan struktur di titik rawan (engsel & sudut) + finishing halus.
+Hemat Biaya — Opsi rekondisi atau ganti part menyesuaikan budget & ketersediaan.
+Finishing Mulus — Repaint warna original/ custom, hasil rapi tanpa bekas tambalan mencolok.
+Garansi Pengerjaan — Jaminan kekuatan & estetika sesuai paket yang dipilih.
+Proses Transparan — Estimasi harga & waktu jelas sebelum mulai.
               </Option>
             </div>
             <div className="mb-4 flex gap-4">

@@ -78,12 +78,12 @@ export function Footer() {
           className="md:text-center mt-16 font-normal !text-gray-700"
         >
           &copy; {CURRENT_YEAR} Made with{" "}
-          <a href="https://www.material-tailwind.com" target="_blank">
+          <a href="https://www.casinglaptop.com" target="_blank">
             Material Tailwind
           </a>{" "}
           by{" "}
-          <a href="https://www.creative-tim.com" target="_blank">
-            Creative Tim
+          <a href="https://www.casinglaptop.com" target="_blank">
+            Casing Laptop
           </a>
           .
         </Typography>

@@ -10,9 +10,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "NextJS Tailwind Course Details Page",
+  title: "Service Casing Laptop Bandung",
   description:
-    "Introducing Tailwind Course Details Page, a comprehensive and user-friendly course details template designed using Tailwind CSS and Material Tailwind.",
+    "Jasa Service Casing Laptop Terpercaya di Kota Bandung.",
 };
 
 export default function RootLayout({

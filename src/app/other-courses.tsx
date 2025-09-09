@@ -35,7 +35,7 @@ export function OtherCourses() {
     <section className="pb-20 px-8">
       <div className="container mx-auto mb-20 text-center">
         <Typography variant="h2" color="blue-gray" className="mb-4">
-          Other Courses
+          Layanan Lain
         </Typography>
         <Typography
           variant="lead"

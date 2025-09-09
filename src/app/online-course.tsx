@@ -14,20 +14,20 @@ import FeatureCard from "@/components/feature-card";
 const FEATURES = [
   {
     icon: InboxIcon,
-    title: "Hands-On Projects",
+    title: "Casing Retak & Patah",
     description:
-      "Apply your knowledge to real-world projects, building a robust portfolio.",
+      "Casing laptop retak adalah masalah yang umum terjadi, biasanya disebabkan oleh benturan, terjatuh, tekanan saat dibawa, engsel yang aus, panas berlebih, atau kualitas material yang kurang baik.",
   },
   {
     icon: AcademicCapIcon,
-    title: "Career Opportunities",
+    title: "Engsel Patah & Macet",
     description:
-      "React developers are in high demand and this course is designed for you!",
+      "Engsel laptop patah atau macet membuat layar susah dibuka-tutup, terasa seret, atau terdengar bunyi “krek”. Dibiarkan terlalu lama bisa merusak casing, panel layar, hingga kabel fleksibel.",
   },
   {
     icon: CheckBadgeIcon,
-    title: "Flexible Learning",
-    description: "Access course materials whenever it suits your schedule.",
+    title: "Body Kusam & Tergores",
+    description: "Laptop tampak kusam dan penuh baret? Cat ulang profesional adalah jawabannya. Kami lakukan sanding terukur, primer adhesion, warna sesuai pilihan (matte/doff/satin/gloss), lalu clear coat pelindung. Finishing presisi, tampilan segar, siap dipakai harian..",
   },
 ];
 
@@ -46,15 +46,18 @@ export function OnlineCourse() {
         </div>
         <div className="col-span-2 lg:pl-24">
           <Typography variant="h2" color="blue-gray" className="mb-4">
-            Online Course
+            RESTORASI CASING LAPTOP
           </Typography>
           <Typography
             variant="lead"
             className="mb-5 max-w-lg px-4 text-left text-lg !text-gray-500 lg:px-0  "
           >
-            In this comprehensive React Course, you&apos;ll delve into the world
-            of React, from its fundamentals to advanced techniques. Our expert
-            instructors will guide you through every step.
+            Dari sifatnya yang portabel, casing laptop rentan terhadap
+            kerusakan fisik seperti retak, penyok, atau goresan. Casing yang
+            rusak tidak hanya mengurangi estetika laptop, tetapi juga dapat
+            mempengaruhi perlindungan komponen internalnya. Layanan restorasi
+            casing laptop bertujuan untuk memperbaiki dan mengembalikan kondisi
+            fisik casing laptop ke keadaan semula atau bahkan lebih baik.
           </Typography>
 
           <div className="col-span-2 grid grid-cols-1 gap-10 sm:grid-cols-3 ">
