@@ -4,65 +4,59 @@ import React from "react";
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 import {
-  AcademicCapIcon,
-  CheckBadgeIcon,
-  InboxIcon,
+  WrenchScrewdriverIcon,
+  Cog6ToothIcon,
+  BoltIcon,
 } from "@heroicons/react/24/solid";
 
 import FeatureCard from "@/components/feature-card";
 
 const FEATURES = [
   {
-    icon: InboxIcon,
-    title: "Casing Retak & Patah",
+    icon: WrenchScrewdriverIcon,
+    title: "Perbaikan & Penggantian Komponen",
     description:
-      "Casing laptop retak adalah masalah yang umum terjadi, biasanya disebabkan oleh benturan, terjatuh, tekanan saat dibawa, engsel yang aus, panas berlebih, atau kualitas material yang kurang baik.",
+      "Layanan penggantian keyboard, layar, baterai, fan, dan komponen hardware lain yang rusak atau aus. Dikerjakan oleh teknisi berpengalaman dengan garansi pengerjaan.",
   },
   {
-    icon: AcademicCapIcon,
-    title: "Engsel Patah & Macet",
+    icon: Cog6ToothIcon,
+    title: "Upgrade & Optimasi Perangkat",
     description:
-      "Engsel laptop patah atau macet membuat layar susah dibuka-tutup, terasa seret, atau terdengar bunyi “krek”. Dibiarkan terlalu lama bisa merusak casing, panel layar, hingga kabel fleksibel.",
+      "Upgrade RAM, SSD, dan komponen lain untuk meningkatkan performa laptop/PC Anda. Termasuk optimasi sistem dan pembersihan internal.",
   },
   {
-    icon: CheckBadgeIcon,
-    title: "Body Kusam & Tergores",
-    description: "Laptop tampak kusam dan penuh baret? Cat ulang profesional adalah jawabannya. Kami lakukan sanding terukur, primer adhesion, warna sesuai pilihan (matte/doff/satin/gloss), lalu clear coat pelindung. Finishing presisi, tampilan segar, siap dipakai harian..",
+    icon: BoltIcon,
+    title: "Servis Kelistrikan & Charging",
+    description:
+      "Solusi masalah charging, port power, dan kelistrikan laptop/PC. Diagnosa akurat dan perbaikan cepat untuk perangkat yang tidak bisa mengisi daya.",
   },
 ];
 
 export function OnlineCourse() {
   return (
-    <section className="py-28 px-8">
-      <div className="container mx-auto grid grid-cols-1 place-items-center lg:grid-cols-3">
-        <div className="col-span-1 rounded-xl lg:mb-0 mb-12">
+    <section className="py-28 px-8 bg-gray-50">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+        <div className="col-span-1 flex justify-center items-center">
           <Image
-            width={768}
-            height={500}
+            width={400}
+            height={400}
             src="/image/online-course.png"
-            className="h-full max-h-[500px] w-full object-cover scale-110"
-            alt="online course"
+            className="rounded-xl shadow-lg object-cover"
+            alt="Layanan Servis Laptop & Komputer"
           />
         </div>
-        <div className="col-span-2 lg:pl-24">
-          <Typography variant="h2" color="blue-gray" className="mb-4">
-            RESTORASI CASING LAPTOP
+        <div className="col-span-2 lg:pl-16">
+          {/* @ts-ignore */}
+          <Typography as="h2" color="blue-gray" className="mb-4 text-3xl font-bold">
+            Layanan Servis Laptop & Komputer
           </Typography>
-          <Typography
-            variant="lead"
-            className="mb-5 max-w-lg px-4 text-left text-lg !text-gray-500 lg:px-0  "
-          >
-            Dari sifatnya yang portabel, casing laptop rentan terhadap
-            kerusakan fisik seperti retak, penyok, atau goresan. Casing yang
-            rusak tidak hanya mengurangi estetika laptop, tetapi juga dapat
-            mempengaruhi perlindungan komponen internalnya. Layanan restorasi
-            casing laptop bertujuan untuk memperbaiki dan mengembalikan kondisi
-            fisik casing laptop ke keadaan semula atau bahkan lebih baik.
+          {/* @ts-ignore */}
+          <Typography as="p" color="gray" className="mb-6 text-lg">
+            Kami menyediakan berbagai layanan perbaikan dan upgrade perangkat komputer dan laptop, mulai dari penggantian komponen, optimasi performa, hingga solusi masalah kelistrikan. Semua pengerjaan dilakukan oleh teknisi profesional dengan standar kualitas tinggi.
           </Typography>
-
-          <div className="col-span-2 grid grid-cols-1 gap-10 sm:grid-cols-3 ">
-            {FEATURES.map(({ icon, title, description }) => (
-              <FeatureCard key={title} icon={icon} title={title}>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            {FEATURES.map(({ icon: Icon, title, description }) => (
+              <FeatureCard key={title} icon={Icon} title={title}>
                 {description}
               </FeatureCard>
             ))}
